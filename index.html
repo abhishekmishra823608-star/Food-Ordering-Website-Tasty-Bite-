@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TastyBite | Food Delivery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">&#127828;Tasty<span>Bite</span></a>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-page="index.html" class="active">Home</a></li>
+      <li><a href="menu.html" data-page="menu.html">Menu</a></li>
+      <li><a href="cart.html" data-page="cart.html">Cart</a></li>
+      <li><a href="order-history.html" data-page="order-history.html">Orders</a></li>
+      <li><a href="login.html" id="authLink" data-page="login.html">Login</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="cart.html" class="icon-btn" title="Cart">
+        &#128722;<span class="badge" id="cartBadge">0</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <span class="hero-badge">&#128293;Free delivery on orders over ₹500</span>
+      <h1>Delicious food, <span>delivered</span> fast to your door</h1>
+      <p>Order from our menu of fresh pizzas, juicy burgers, aromatic biryani and more — cooked fresh, delivered hot.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-primary">Order Now</a>
+        <a href="#categories" class="btn btn-outline">Explore Menu</a>
+      </div>
+      <div class="hero-stats">
+        <div><h3>15+</h3><p>Menu Items</p></div>
+        <div><h3>4.8★</h3><p>Avg. Rating</p></div>
+        <div><h3>30min</h3><p>Avg. Delivery</p></div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=650" alt="Delicious food spread" />
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories" id="categories">
+  <div class="container">
+    <h2 class="section-title">Browse by Category</h2>
+    <p class="section-subtitle">Pick a craving, we've got it covered</p>
+    <div class="category-grid" id="categoryGrid">
+      <!-- Filled by main.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED FOODS ================= -->
+<section class="food-section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Popular Right Now</h2>
+        <p class="section-subtitle" style="margin-bottom:0;">Loved by our customers this week</p>
+      </div>
+      <a href="menu.html" class="btn btn-outline">View Full Menu</a>
+    </div>
+    <div class="food-grid" id="featuredGrid">
+      <!-- Filled by main.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROMO BANNER ================= -->
+<section class="categories">
+  <div class="container">
+    <div style="background: linear-gradient(120deg, var(--color-dark), #4a3626); border-radius: var(--radius-lg); padding: 50px 30px; text-align:center; color:#fff;">
+      <h2 style="font-size:1.8rem; margin-bottom:10px;">Get 20% OFF your first order</h2>
+      <p style="color:#d8d3cb; margin-bottom:22px;">Use code <b style="color: var(--color-primary);">TASTY20</b> at checkout</p>
+      <a href="menu.html" class="btn btn-primary">Order Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">&#127828;  Tasty<span style="color:#fff;">Bite</span></div>
+      <p>Fresh, fast, and full of flavor. Your favorite meals delivered right to your door.</p>
+      <div class="social-links">
+        <a href="#">f</a><a href="#">t</a><a href="#">i</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="login.html">Login</a>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <a href="menu.html">Pizza</a>
+      <a href="menu.html">Burger</a>
+      <a href="menu.html">Biryani</a>
+      <a href="menu.html">Desserts</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>&#128205; Location : F-194 , F block , Alpha 2 , Greater  Noida </p>
+      <p>&#128222; Phone : +91 8236080590 </p>
+      <p>&#9993; Email : abhishekmishra823608@gmail.com</p>
+  </div>
+  <div class="footer-bottom">&copy; 2026 TastyBite. All rights reserved. All Design by <a href="#">Abhishek Mishra</a></div>
+</footer>
+
+<script src="js/foods-data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

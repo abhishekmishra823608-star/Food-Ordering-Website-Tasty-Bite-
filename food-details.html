@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Food Details | TastyBite</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">&#127828; Tasty<span>Bite</span></a>
+    <div class="nav-overlay" id="navOverlay"></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" data-page="index.html">Home</a></li>
+      <li><a href="menu.html" data-page="menu.html" class="active">Menu</a></li>
+      <li><a href="cart.html" data-page="cart.html">Cart</a></li>
+      <li><a href="order-history.html" data-page="order-history.html">Orders</a></li>
+      <li><a href="login.html" id="authLink" data-page="login.html">Login</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="icon-btn">&#128722;<span class="badge" id="cartBadge">0</span></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="details-wrap" id="detailsWrap">
+    <!-- Filled by js/food-details.js -->
+  </div>
+
+  <div>
+    <h2 class="section-title">You might also like</h2>
+    <div class="food-grid" id="relatedGrid" style="margin-bottom:60px;"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">&#127828;Tasty<span style="color:#fff;">Bite</span></div>
+      <p>Fresh, fast, and full of flavor.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 TastyBite. All rights reserved.All Design by <a href="#">Abhishek Mishra</div>
+</footer>
+
+<script src="js/foods-data.js"></script>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/food-details.js"></script>
+</body>
+</html>
